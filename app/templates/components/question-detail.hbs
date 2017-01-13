@@ -7,11 +7,11 @@
 <br>
 <button {{action 'delete' question}}>Delete This Question</button>
 <br>
+<hr>
 <h3>Answers</h3>
-<ul>
   {{#each question.answers as |answer|}}
     {{answer-tile answer=answer}}
     <button {{action 'delete' answer}}>Delete This Answer</button>
+    <br>
   {{/each}}
-</ul>
 <br>
