@@ -1,2 +1,8 @@
 <h2>Welcome to Question-Answer!</h2>
 <h5>Questions</h5>
+<ul>
+  {{#each model as |question|}}
+     <li>
+       {{#link-to 'question' question.id}}{{question.author}} {{question.content}} {{question.notes}} {{/link-to}}      </li>
+  {{/each}}
+</ul>
