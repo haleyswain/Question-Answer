@@ -2,7 +2,6 @@
 <h5>Questions</h5>
 <ul>
   {{#each model as |question|}}
-     <li>
-       {{#link-to 'question' question.id}}{{question.author}} {{question.content}} {{question.notes}} {{/link-to}}      </li>
+    {{question-tile question=question destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>

@@ -1,1 +1,9 @@
-{{yield}}
+Written by {{question.author}}
+<br>
+{{question.content}}
+<br>
+{{question.notes}}
+<br>
+{{update-question question=question update="update"}}
+<br>
+<button {{action 'delete' question}}>Delete This Question</button>
