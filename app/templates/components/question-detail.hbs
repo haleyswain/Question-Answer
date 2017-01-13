@@ -1,9 +1,9 @@
-<h4>Author</h4> {{question.author}}
+<h4><u>Author</u></h4> {{question.author}}
 <br>
-<h4>Content</h4>{{question.content}}
+<h4><u>Content</u></h4>{{question.content}}
 <br>
-<h4>Notes</h4>{{question.notes}}
-
+<h4><u>Notes</u></h4>{{question.notes}}
+<br>
 <br>
 <button {{action 'delete' question}}>Delete This Question</button>
 <br>
@@ -11,6 +11,7 @@
 <ul>
   {{#each question.answers as |answer|}}
     {{answer-tile answer=answer}}
+    <button {{action 'delete' answer}}>Delete This Answer</button>
   {{/each}}
 </ul>
-{{#link-to 'index'}}Home{{/link-to}}
+<br>
