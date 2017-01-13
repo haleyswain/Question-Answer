@@ -1,7 +1,16 @@
-Written by {{question.author}}
+<h4>Author</h4> {{question.author}}
 <br>
-{{question.content}}
+<h4>Content</h4>{{question.content}}
 <br>
-{{question.notes}}
+<h4>Notes</h4>{{question.notes}}
+
 <br>
 <button {{action 'delete' question}}>Delete This Question</button>
+<br>
+<h3>Answers</h3>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+{{#link-to 'index'}}Home{{/link-to}}

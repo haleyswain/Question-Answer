@@ -10,5 +10,12 @@
     "content": "How old is Ryan Gosling?",
     "author": "Emma Stone",
     "notes": "Ryan Gosling Age"
+  }],
+  "answers": [{
+    "answer_author": "Andrea",
+    "answer_content": "Blue."
+  }, {
+    "answer_author": "Alex",
+    "answer_content": "600,000"
   }]
 }

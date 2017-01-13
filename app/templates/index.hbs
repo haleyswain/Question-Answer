@@ -1,9 +1,10 @@
 <h2>Welcome to Question-Answer!</h2>
 <h5>Questions</h5>
 <ul>
-  {{#each model as |question|}}
-    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+  {{#each model.questions as |question|}}
+    {{question-tile question=question}}
   {{/each}}
 </ul>
+
 
 {{new-question saveQuestion2="saveQuestion3"}}
